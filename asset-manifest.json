@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/stringly_ai/static/css/main.1059f4c0.css",
-    "main.js": "/stringly_ai/static/js/main.05f92f16.js",
+    "main.js": "/stringly_ai/static/js/main.10f084f1.js",
     "static/js/787.eab62ef4.chunk.js": "/stringly_ai/static/js/787.eab62ef4.chunk.js",
     "index.html": "/stringly_ai/index.html",
     "main.1059f4c0.css.map": "/stringly_ai/static/css/main.1059f4c0.css.map",
-    "main.05f92f16.js.map": "/stringly_ai/static/js/main.05f92f16.js.map",
+    "main.10f084f1.js.map": "/stringly_ai/static/js/main.10f084f1.js.map",
     "787.eab62ef4.chunk.js.map": "/stringly_ai/static/js/787.eab62ef4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1059f4c0.css",
-    "static/js/main.05f92f16.js"
+    "static/js/main.10f084f1.js"
   ]
 }
