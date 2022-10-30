@@ -141,7 +141,7 @@ export default class extends PureComponent {
         </NavItem>*/}
                         <NavItem eventKey="help">
                             <NavIcon>
-                                <i className="fa fa-question-circle" style={{ fontSize: '2.5em', verticalAlign: 'middle' }} />
+                                <i className="far fa-question-circle" style={{ fontSize: '2.5em', verticalAlign: 'middle' }} />
                             </NavIcon>
                             <NavText style={{ paddingRight: 32 }} title="Help" style={{fontSize: '16px'}}>
                                 Help
@@ -149,7 +149,7 @@ export default class extends PureComponent {
                         </NavItem>
                         <NavItem eventKey="about">
                             <NavIcon>
-                                <i className="fa fa-address-card" style={{ fontSize: '2.5em', verticalAlign: 'middle' }} />
+                                <i className="far fa-address-card" style={{ fontSize: '2.5em', verticalAlign: 'middle' }} />
                             </NavIcon>
                             <NavText style={{ paddingRight: 32 }} title="About" style={{fontSize: '16px'}}>
                                 About
