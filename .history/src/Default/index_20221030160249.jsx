@@ -8,6 +8,7 @@ import ReactDOM from 'react-dom';
 import LearnMainPanel from './LearnMainPanel';
 import HomePage from './HomePage';
 import TunerPanel from './TunerPanel';
+import {Routes, Route, useNavigate} from 'react-router-dom';
 
 const Main = styled.main`
     position: relative;
@@ -16,6 +17,12 @@ const Main = styled.main`
     padding: 0 20px;
     margin-left: ${props => (props.expanded ? 240 : 64)}px;
 `;
+
+function iframe() {
+    return {
+        __html: '<iframe src="https://sites.google.com/view/projectresearchviolin/home"></iframe>'
+    }
+}
 
 
 export default class extends PureComponent {
@@ -48,7 +55,7 @@ export default class extends PureComponent {
             //const otherDataDiv = <div>Aditya Satish, ditu.sat@gmail.com.</div>
             //const otherDataDiv = <div>dangerouslySetInnerHTML=<iframe src="https://sites.google.com/view/projectresearchviolin/home"></iframe> </div>
            //ReactDOM.render(otherDataDiv, document.getElementById('learn_main_panel'));
-           window.open('https://sites.google.com/view/projectresearchviolin/home')
+           navigate("https://sites.google.com/view/projectresearchviolin/home");
         }
     };
     onToggle = (expanded) => {

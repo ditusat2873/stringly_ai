@@ -17,6 +17,12 @@ const Main = styled.main`
     margin-left: ${props => (props.expanded ? 240 : 64)}px;
 `;
 
+function iframe() {
+    return {
+        __html: '<iframe src="https://sites.google.com/view/projectresearchviolin/home"></iframe>'
+    }
+}
+
 
 export default class extends PureComponent {
     state = {
@@ -47,8 +53,18 @@ export default class extends PureComponent {
         {
             //const otherDataDiv = <div>Aditya Satish, ditu.sat@gmail.com.</div>
             //const otherDataDiv = <div>dangerouslySetInnerHTML=<iframe src="https://sites.google.com/view/projectresearchviolin/home"></iframe> </div>
-           //ReactDOM.render(otherDataDiv, document.getElementById('learn_main_panel'));
-           window.open('https://sites.google.com/view/projectresearchviolin/home')
+
+            const otherDataDiv = <div className="video-responsive">
+                <iframe
+                width="800"
+                height="500"
+                src={`https://sites.google.com/view/projectresearchviolin/home`}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                />
+            </div>
+            ReactDOM.render(otherDataDiv, document.getElementById('learn_main_panel'));
         }
     };
     onToggle = (expanded) => {

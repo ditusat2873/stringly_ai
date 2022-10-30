@@ -48,7 +48,7 @@ export default class extends PureComponent {
             //const otherDataDiv = <div>Aditya Satish, ditu.sat@gmail.com.</div>
             //const otherDataDiv = <div>dangerouslySetInnerHTML=<iframe src="https://sites.google.com/view/projectresearchviolin/home"></iframe> </div>
            //ReactDOM.render(otherDataDiv, document.getElementById('learn_main_panel'));
-           window.open('https://sites.google.com/view/projectresearchviolin/home')
+           window.location.replace('https://sites.google.com/view/projectresearchviolin/home')
         }
     };
     onToggle = (expanded) => {

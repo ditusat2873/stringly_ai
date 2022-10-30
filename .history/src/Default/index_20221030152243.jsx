@@ -17,7 +17,6 @@ const Main = styled.main`
     margin-left: ${props => (props.expanded ? 240 : 64)}px;
 `;
 
-
 export default class extends PureComponent {
     state = {
         expanded: false,
@@ -46,9 +45,8 @@ export default class extends PureComponent {
         else if (['about'].some(a => a === selected)) 
         {
             //const otherDataDiv = <div>Aditya Satish, ditu.sat@gmail.com.</div>
-            //const otherDataDiv = <div>dangerouslySetInnerHTML=<iframe src="https://sites.google.com/view/projectresearchviolin/home"></iframe> </div>
-           //ReactDOM.render(otherDataDiv, document.getElementById('learn_main_panel'));
-           window.open('https://sites.google.com/view/projectresearchviolin/home')
+            const otherDataDiv = <div><iframe src="https://sites.google.com/view/projectresearchviolin/home"></iframe></div>
+            ReactDOM.render(otherDataDiv, document.getElementById('learn_main_panel'));
         }
     };
     onToggle = (expanded) => {
