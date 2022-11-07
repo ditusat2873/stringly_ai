@@ -98,15 +98,7 @@ export default class extends PureComponent {
                 <SideNav onSelect={this.onSelect} onToggle={this.onToggle} style={{background: '#db3d44'}}>
                     <SideNav.Toggle />
                     <SideNav.Nav selected={selected}>
-                        <NavItem eventKey="tune">
-                            <NavIcon>
-                                <i className="fa-solid fa-violin" style={{ fontSize: '2.5em', verticalAlign: 'middle' }} />
-                            </NavIcon>
-                            <NavText style={{ paddingRight: 32 }} title="Tune" style={{fontSize: '16px'}}>
-                                Tune
-                            </NavText>
-                        </NavItem>
-                       <NavItem eventKey="learn">
+                        <NavItem eventKey="learn">
                             <NavIcon>
                                 <i className="fa fa-leanpub" style={{ fontSize: '2.5em', verticalAlign: 'middle' }} />
                             </NavIcon>
